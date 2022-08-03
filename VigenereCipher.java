@@ -19,7 +19,7 @@ public class VigenereCipher {
 	 * This constructor sets the key variable because the encode / decode methods dont take a key parameter for whatever reason.
 	 * This method also generates the cipher table given the initial character, i.e. the code.
 	 */
-	public Prog010Cipher( char code, String key ) {
+	public VigenereCipher( char code, String key ) {
 		setCipher(code);
 		this.key = key;
 	}
@@ -133,7 +133,7 @@ public class VigenereCipher {
 		//converting the given message to uppercase in case of lowercase letters.
 		givenMessage = givenMessage.toUpperCase();
 		
-		Prog010Cipher cipherObject = new Prog010Cipher(code, key);
+		VigenereCipher cipherObject = new VigenereCipher(code, key);
 		
 		//stores the result of the encoded message
 		String cipherResult = cipherObject.encode(givenMessage);
