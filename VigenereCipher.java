@@ -146,7 +146,7 @@ public class VigenereCipher {
 		//Added a prompt for decoding the cipher if needed or for testing.
 		System.out.print("Would you like to decode the cipher for viewing? Y/N : ");
 		String nextline = scan.nextLine();
-		if(nextline.charAt(0) == 'Y') {
+		if(nextline.charAt(0) == 'Y' || nextline.charAt(0) == 'y') {
 			System.out.print("Decoded Cipher: ");
 			System.out.print(cipherDecodeResult);
 			System.out.println();
@@ -158,7 +158,7 @@ public class VigenereCipher {
 		//Added a prompt for viewing the cipher if needed or for testing.
 		System.out.print("Would you like to print out the cipher table for viewing? Y/N : ");
 		nextline = scan.nextLine();
-		if(nextline.charAt(0) == 'Y') {
+		if(nextline.charAt(0) == 'Y' || nextline.charAt(0) == 'y') {
 			cipherObject.printGrid();
 		} else {
 			System.out.println("Cipher table will remain hidden.");
